@@ -1,0 +1,59 @@
+Neural Networks is a set of algorithms designed to learn the way our brain works.
+The biological neurons inspire the structure and the function of the neural networks.
+
+Each artificial neuron is modeled as follows:
+
+Each neuron receives inputs.
+Adds weights and biases to the input.
+Sum inputs with weights and bias.
+This triggers the Activation function.
+Activation function will take the weighted sum of the previous step and fire the output.
+
+****************************
+What is Neural Networks??
+****************************
+
+A neural network usually involves a large number of processors operating in parallel and arranged in tiers. The first tier receives the raw input information -- analogous to optic nerves in human visual processing. Each successive tier receives the output from the tier preceding it, rather than from the raw input -- in the same way neurons further from the optic nerve receive signals from those close to it. The last tier produces the output of the system.
+
+Each processing node has its own small sphere of knowledge, including what it has seen and any rules it was originally programmed with or developed for itself. The tiers are highly interconnected, which means each node in tier n will be connected to many nodes in tier n-1 -- its inputs -- and in tier n+1, which provides input for those nodes. There may be one or multiple nodes in the output layer, from which the answer it produces can be read
+
+
+***********************************************
+Vannila Nueral Network - Multi-layer perceptron
+************************************************
+
+A multilayer perceptron (MLP) is a class of feed-forward artificial neural network. An MLP consists of at least three layers of nodes. Except for the input nodes, each node is a neuron that uses a nonlinear activation function. MLP utilizes a supervised learning technique called backpropagation for training
+
+Supervised Learning
+
+In Supervised Learning, you give the list of Inputs and Outputs for a Neural Network to Learn.
+
+Based on the actual output, the Neuron adjusts its weights and biases. This is achieved by a process called Training
+
+*********************************
+Forward and Backward Propagation
+**********************************
+
+Neural Networks learn using Back Propagation.
+
+When the input is combined with the weights and bias to trigger the activation, it is called "forward propagation".
+When the error estimates are propagated backward to adjust the weights and biases, it is called "backpropagation".
+
+Steps in Back Propagation
+
+During training, the input combines with random weights and bias values.
+1.They trigger the activation function.
+2. The output of the activation function is the predicted output.
+3. The predicted output is compared to the actual output.
+4. The difference is propagated backward.
+5. The bias values and weights are updated based on the error values.
+
+Gradient at a layer = multiplication of gradients at prior level
+
+@@@@@@@@@@@@@@@@@@@@@
+Important links
+@@@@@@@@@@@@@@@@@@@@@
+
+Micheal Neilsen Book - http://michaelnielsen.org/
+Andrew Ng Class - http://www.andrewng.org/
+Breakthrough papers by LeCun, Bengio, Hinton G (2006 & 2007)
