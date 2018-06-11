@@ -1,0 +1,83 @@
+Convolution Neural Networks - Yann LeCun
+
+
+Machines understand images based on the pixel intensity.
+
+So any image in matrix representation will have numbers from 1 to 255.
+1 - White
+256 - Dark shade of Green
+
+
+Every image has the same objects represented in slightly different manner.
+Each object has to be recognized.
+Every feature should be extracted.
+
+How can you identify objects and extract each feature and send it to a neural network for learning?
+
+
+Convolution layer:
+When the image is superimposed with a filter, and run through it once, the output obtained is another image with reduced dimensions. 
+This one layer of the filter is called convolution layer.
+
+
+Pooling:
+Pooling reduces the size of an image. Only those pixels that stand out are brought out of pooling
+
+
+
+Output Layer:
+The Output layer is the last layer where the image is converted into a 1-Dimensional matrix.
+
+******************************************
+Convolutional Neural Network Architecture
+******************************************
+simple ConvNet is a sequence of layers, and every layer of a ConvNet transforms one volume of activations to another through a 
+differentiable function. We use three main types of layers to build ConvNet architectures: 
+Convolutional Layer, Pooling Layer, and Fully-Connected Layer (exactly as seen in regular Neural Networks). 
+We will stack these layers to form a full ConvNet architecture
+
+
+INPUT [32x32x3] will hold the raw pixel values of the image, in this case an image of width 32, height 32, and with three color channels R,G,B.
+
+CONV layer will compute the output of neurons that are connected to local regions in the input, each computing a dot product between their weights and a small region they are connected to in the input volume. This may result in volume such as [32x32x12] if we decided to use 12 filters.
+
+RELU(Rectified linear unit)  layer will apply an elementwise activation function, such as the max(0,x) thresholding at zero. This leaves the size of the volume unchanged ([32x32x12]).
+
+POOL layer will perform a downsampling operation along the spatial dimensions (width, height), resulting in volume such as [16x16x12].
+
+FC (i.e. fully-connected) layer will compute the class scores, resulting in volume of size [1x1x10], where each of the 10 numbers correspond to a class score, 
+    such as among the 10 categories of CIFAR-10. As with ordinary Neural Networks and as the name implies, each neuron in this layer will be connected to all the numbers in the previous volume
+    
+**********************    
+Imagenet Database
+**********************
+
+ImageNet is described as a database of millions of Images scraped from the internet that has been done for "Object Recognition Software Research".
+
+All the images have been annotated by hand.
+Every year they conduct a ImageNet Large Scale Visual Recognition Challenge (ILSVRC) to gauge the accuracy of many software to classify objects correctly.
+    
+    
+
+Pre-Trained Models
+
+There are multiple pre-trained models available for Image Classification and object detection.
+
+Some of them include
+
+AlexNet
+ResNet
+VGG19
+InceptionResNet
+GoogLeNet
+DenseNet
+NASNet
+
+Some of these models have participated in the ImageNet Challenge in the past   
+
+
+How do Pre-Trained Models Work?
+
+You can load any of the available pre-trained models and pass a random image. The models will output the probability of each object in that image.
+
+    
