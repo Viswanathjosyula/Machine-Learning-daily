@@ -1,0 +1,27 @@
+
+Deep Belief Network (DBN) is an extension of RBM.
+DBNs are stacked RBMs layer by layer.
+
+
+Learning in DBN
+
+DBN uses pretraining before applying backpropagation.
+This pretraining is similar to how RBS learn by reconstruction.
+Generative weights determine how parameters in one layer depend on the parameters in the previous layer.
+In the forward pass, it is the observed weight.
+In the reverse pass, it is the generative weights.
+This avoids the learning from getting into local minima.
+
+
+Applications of DBN
+
+Sequence Recognition in Videos
+Facial Recognition
+Motion capture
+
+
+DBN is multi-layer belief networks. where each layer is Restricted Boltzmann Machine stacked against each other to for the Deep belief Network. The first step of training DBN is to learn a layer of features from the visible units, 
+using Contrastive Divergence (CD) algorithm. Then, the next step is to treat the activations of previously trained features as 
+visible unites and learn features of features in a second hidden layer. Finally, the whole DBN is trained when the learning for the final hidden layer is achieved
+
+
