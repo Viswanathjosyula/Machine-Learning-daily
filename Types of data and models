@@ -1,0 +1,40 @@
+Shallow Learning
+
+You would have come across this term Shallow Learning. When does shallow learning happen in Neural Networks?
+When you just have one hidden layer between your inputs and outputs.
+Another way of interpreting that idea is, you are just performing one task at a time.
+
+When it comes to structured data(Data Base), shallow learning models can be applied for supervised learning.
+
+Shallow Learning - Tasks and Algorithms
+
+Some of the tasks that can be grouped under shallow learning are:
+
+Feature Extraction - Preprocessing
+Mapping specific features into vector space - Kernel methods
+Rule-based decision making - Decision Trees
+Combining various estimates - Ensemble methods
+
+===================================================================
+Deep Learning
+
+In deep learning, you have two or more hidden layers. This allows the algorithm to perform multiple tasks.
+There are Multiple Stack Layers of Neurons
+There are Specialized layers based on data type - Image, Text, and Voice
+
+Deep Learning Models work well for unstructured data(Images, voice calls, videos, text)
+
+==================================================================
+Types of data and models
+
+Voice Data -Sequence Models work well for Voice Data.
+Text Data - Recurrent Neural Networks work well for Text Data. However, even a general multi layer
+perceptron can be trained for text data
+Word2Vec is a popular Deep Learning Representation of Text Data.
+Image Data - Convolutional Neural Networks (CNNs) are the best
+
+Pattern Complexity
+
+For simple patterns - Use methods like SVM
+For Moderate patterns - Deep nets out perform
+For Complex Patters - Deep nets - only practical choice
