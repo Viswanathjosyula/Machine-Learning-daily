@@ -1,0 +1,20 @@
+Restricted Boltzmann Machine (RBM) was conceptualized by Geoff Hinton. It is used in
+
+Dimension Reduction
+Regression
+Classification
+
+
+RBMs have two layers:
+
+Input
+Hidden
+
+Each input layer is linked to all the hidden layers. Each node in the input layer is not connected to one another.
+
+
+Learning in RBM
+
+RBMs learn by re-contructing the inputs.
+They learn in an unsupervised fashion.
+They re-construct the input in a backward manner and update the parameters accordingly.
