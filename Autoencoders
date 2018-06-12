@@ -1,0 +1,19 @@
+
+Autoencoder architecture comprises two deep belief networks stacked against each other symmetrically.
+The number of input and output layers is the same in Autoencoders.
+They are predominantly used in Dimension Reduction as a substitute for Principal Component Analysis
+
+Since Autoencoders are an extension of Deep Belief Networks, they learn in an unsupervised manner. They learn by reconstructing the input.
+
+In de-noising autoencoders, if the input is fed with noise, the output is a de-noised version of the input
+
+
+Applications
+
+Autoencoders are applied in the following areas:
+
+Data Compression
+Image Search
+Information Retrieval
+Topic Modeling
+
