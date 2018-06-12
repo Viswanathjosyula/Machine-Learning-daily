@@ -1,0 +1,53 @@
+***********************
+RNN for Sequence Data
+***********************
+
+Sequence Data has a temporal or time component to it. The current component is dependent on the previous component. 
+When you go for a normal Deep Neural Network Architecture, you cannot do justice to the temporal part
+
+
+Forward Propogation
+
+1.Input is provided to the NNet at each given time step.
+2.In the successive time step, the output of the (n-1)'th neuron is the input of the n'th neuron in the sequence.
+3.This is repeated until all the information is loaded.
+4.Once the time steps are exhausted, the output is calculated.
+5.Depending on the error, it is backpropagated to the weights and biases to adjust.
+
+*************************************
+Recursive Neural Tensor Networks
+*************************************
+
+RNTNs are networks that are exclusively used for Natural Language Processing.
+
+NLP is an application of computer science in understanding and synthesizing Natural Human Spoken Language. 
+Since RNTS have a recursive tree structure, they are used in NLP.
+
+*****
+NLP(Natural language processing)
+*****
+
+NLP has many components to understand Natural Language, some of them include:
+
+Lemmatization
+Named Entity Parsing
+Part of Speech Tagging
+Segmentation
+A combination of the components mentioned above is applied to Natural Language to make them Machine Understandable.
+
+RNTNs are leveraged for a lot of these transformations.
+
+**************
+Word2vec
+**************
+
+Word2vec is a popular deep learning model where words are represented as vectors in n dimension space.
+
+When the words are interpreted as vectors, understand the intent and context becomes easy in NLP.
+
+Word2vec has a pre-trained corpus and vector created. Each curated word corpus is transformed into a word2vec format to understand the span of words for analysis.
+
+
+
+@@@@@@@@@@@@@@@@@@@@@@
+Difference between two probability distributions is know as Kl Divergence
