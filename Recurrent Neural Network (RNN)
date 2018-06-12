@@ -51,3 +51,4 @@ Word2vec has a pre-trained corpus and vector created. Each curated word corpus i
 
 @@@@@@@@@@@@@@@@@@@@@@
 Difference between two probability distributions is know as Kl Divergence
+LSTM stand for Long Short-Term Memory
