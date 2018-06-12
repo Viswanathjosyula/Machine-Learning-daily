@@ -1,0 +1,73 @@
+
+A deep net platform is service that allows you to incorporate deep net in our applications without building one from scratch. 
+This platform provides a set of tools and interface to build your own custom deep net.
+
+
+Types of Deep Net Platforms
+
+Deep net platforms are of two types.
+
+Software platform: This platform is available as downloadable packages that need to be deployed on your hardware.
+Full platform: It is available as online interactive UI to build and deploy models without any coding experience.
+
+
+Platforms:
+
+ersatz labs - Hardware(involves coding)
+
+***********************************************************************************************
+H2o.ai - software application
+
+H2O.ai is an opensource machine learning platform. Along with many machine learning algorithms, 
+this platform currently provides one deep net capability that is Multilayer Perceptron.
+It offers intuitive UI and powerful data munging capabilities.
+It is available as a downloadable package that has to be installed and managed in our own hardware infrastructure.
+
+Features of H2O.ai
+
+H2O.ai supports machine learning models as GLM, Distributed random forest, K-means clustering, gradient boosting machine, 
+a Cox proportional hazard and Naive Bayes classifier.
+Supports Multilayer perceptron for deep learning model which uses L-BFGS algorithm for backpropagation.
+H2O.ai offers built-in integration tools for platforms like HDFS, Amazon S3, SQL, and NoSQL.
+Platform's intuitive UI can be accessed by programming environments like R, Python, and JSON.
+You can model and analyze data with Tableau, Microsoft excel and RStudio.
+Since you need to download the package and deploy in your hardware, H2O.ai comes with in-memory map reduce, 
+columnar compression to help speed the training of models.
+**********************************************************************************************************************************
+Dato - software application
+
+Dato GraphLab is a software platform that provides two deep net capabilities (convolutional network and MLP) 
+along with machine learning and graph algorithms.
+
+Dato GraphLab - Features
+
+For deep learning model, Dato GraphLab provides convolutional neural network (for image recognition) and MLP (for other kinds of data).
+In addition to deep learning nets, this platform also provides machine learning algorithms including text analytics, classification, recommender, regression, and classification.
+It provides built-in support for integration of Amazon S3, SQL DB, HDFS, Spark RDD and Pandas data frames.
+GraphLab offers UI interface for model management and also includes visualization tool called GraphLap Canvas for visualizing model results.
+To work with large data, GraphLab comes with built-in storage support like SFrame, SArray, and SGraph.
+Unlike H2O.ai, Graphlab supports the use of GPUs
+
+========================================================
+The following are the tools offered by deep net platforms.
+
+Deep Net capability
+
+Deep Net Capability tool, the user can choose among various available deep nets depending on the use case. 
+For example, you can select convolutional net for image recognition or RNTN for text analysis and so on
+
+Data Munging
+
+Data Munging tool enables us to import data (structure or unstructured) from various sources and manipulate it 
+to feed into a selected deep net.
+
+UI/Model Management
+
+This tool provides a graphical interface to customize deep net, manage deep net models without the need for explicit coding
+
+Infrastructure
+
+In order to train a significant amount of data and increase performance, some platforms provide infrastructure facilities 
+like built-in integration tools such as Amazon S3, SQL, and NoSQL
+
+===================================================================
