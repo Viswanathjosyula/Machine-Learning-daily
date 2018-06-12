@@ -1,0 +1,121 @@
+
+Libraries are a predefined set of functions and modules that can be included in our code to achieve a particular task.
+There are plenty of libraries in deep learning, each with its advantages and limitations.
+This topic covers the brief overview of deep learning libraries like Theano, Deeplearning4j, Torch, Caffe, and TensorFlow.
+
+
+List of useful libraries
+==================================================================================================================================
+Theano
+
+**Theano**is a Python library.
+It was developed by a machine learning group headed by Yoshua Bengio at the University of Montreal.
+It is more a research platform than a deep learning library. You must perform more work by yourself to generate the models that you want. 
+It does not have any deep learning classes within itself.
+
+Theano - Features
+
+Theano allows us to define mathematical expressions as a set of vectors and matrices. This avoids too many for loops in our code and greatly reduces the computation time.
+Theano is best suited when we are going to build everything from scratch. It just aids in representing our deep net in terms of vectors and matrices.
+Some of the optimization techniques used by Theano are the use of GPU for computations, arithmetic simplification, constant folding,
+using memory aliasing to avoid calculation, etc. 
+Popular libraries like Keras, Lasagne, Blocks, and Pylearn2 are built on top of Theano
+
+Sample Theano Code
+
+import theano
+import theano.tensor as T
+x = T.dmatrix('x')
+func = 1 / (1 + T.exp(-x))
+y = theano.function([x], func)
+y([[0, 1], [-1, -2]])
+
+output:
+array([[ 0.5       ,  0.73105858],
+       [ 0.26894142,  0.11920292]])
+       
+Above is a basic Python code using Theano. The logistic function is applied to corresponding elements of matrix x in parallel 
+without using for loop.
+
+==============================================================================================================================
+DeepLearning4J - can run on scala and clojure
+
+DeepLearning4J (DL4J) is a Deep Learning framework created in Java and JVM languages for using in commercial deep learning projects.
+Adam Gibson developed DL4J.
+
+DL4J is utilized in business environments on distributed CPUs and GPUs, making it ideal for commercial-grade applications.
+
+Features
+
+DL4J runs on distributed GPUs and CPUs.
+It allows us to tune the deep net by selecting values for hyperparameters
+It supports most of the deep nets like DBN, RBN, CNN, RNTN, autoencoders, Recurrent net and vanilla MLP.
+It also includes vectorization library called Canova and distributed multi-node map reduce procedure for training the model.
+
+================================================================================================================================
+
+Torch
+
+Torch is a Lua deep learning framework developed by Koray Kavukcuoglu, Clement Farabet and Ronan Collobert for research and development 
+activities into deep learning algorithms.
+Torch is written in LuaJit (framework in Lua programming language) with an underlying C implementation.
+It has also been further contributed by Facebook, Google DeepMind, Twitter and a host of others.
+Popular applications of Torch are for supervised image problems with Convolutional Neural Networks and agents in more complex domains 
+with deep reinforcement learning.
+
+Features
+Torch allows us to set up, train, and model deep net by configuring its hyperparameters.
+Fast and efficient GPU support.
+Provides built-in functions for indexing, transposing, slicing and numeric optimization.
+Embeddable, with ports to iOS and Android backends.
+
+===================================================================================================================================
+
+
+Caffe
+
+Caffe library was developed by Yangqing Jia at the Berkeley Vision and Learning Center for supervised computer vision problems.
+It is written in C++ with a Python interface
+It is mainly suited for machine vision tasks and also supports speech and text, reinforcement learning and recurrent nets.
+
+Features
+An application can easily switch between CPU and GPU since Caffe is written in C++ with CUDA (a parallel computing platform).
+You can build extremely complex deep net since it allows to perform highly sophisticated configuration on each layer.
+It also includes Matlab and Python interfaces.
+Caffe stores, communicates and manipulates the information as blobs that provides synchronization between CPU and GPU.
+
+=====================================================================================================================================
+
+TensorFlow @google most popular library
+
+TensorFlow is an open-source deep learning library from Google. It is available on GitHub.
+Its flexible architecture permits to use computation to one or more GPUs or CPUs in a server, desktop or mobile device with one API.
+
+Features
+It is similar to the computational graph where edges carry data as N-dimensional vector known as tensor and nodes represent mathematical 
+operation which acts on the tensors.
+Tensorflow lets you deploy parallel computing devices to execute operations quicker. Operations at the nodes are automatically scheduled 
+for parallel computing.
+It includes features such as auto differentiation, shared and symbolic variables, and common subexpression elimination.
+It comes with visualization tools for graphically viewing different levels of the network, changes over time throughout the training.
+process.
+
+Sample Code
+
+import tensorflow as tf
+message = tf.constant('Hello World!')
+sess = tf.Session()
+print(sess.run(message))
+
+Output:
+Hello World!
+
+The above code prints 'Hello world' using Tensorflow. The library is installed and imported as tf. Using tf.Session(), 
+a session management class is initialized and the operations are executed using run() method. 
+Here the message is converted into constant (using tf.constant()) and printed using run() method.
+
+=====================================================================================================================================
+
+
+
+
