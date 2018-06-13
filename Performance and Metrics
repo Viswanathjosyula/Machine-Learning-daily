@@ -1,0 +1,80 @@
+Metrics
+
+Metrics are used to measure the performance of a neural network or any other model.
+The commonly used metrics are error, precision, and recall.
+
+**Error**is the ratio of the number of incorrect classification by a total number of classifications made by the net. 
+This metric may be misleading if data is skewed over one class over other.
+
+Precision and **recall**values are derived from confusion matrix (a table that is often used to describe the performance of a classification model) 
+to know how well your model classifies the data.
+
+
+
+Confusion Matrix
+
+
+Precision:
+
+Out of predicted classification, what proportion actually predicted correctly?
+
+True positive/(True positive + False positive)
+
+Recall:
+
+out of an actual number of classification, what proportion were classified correctly?
+
+True positive/(True positive + False negative)
+
+
+***************
+Parallelism
+***************
+
+One way to improve the performance of deep net is to implement it in terms of vectors and matrices.
+This avoids too many loops and increases the computation speed significantly. 
+This is known as parallel programming which is implemented at a software level.
+
+Parallelism can also be implemented at a hardware level, which is called parallel processing. 
+CPUs with multiple cores and GPUs support parallel processing.
+
+*********************
+Parallel Processing
+*********************
+
+Complex deep nets perform best when parallel processing is used. It can be either shared memory or distributed computing.
+
+GPUs, FPGAs, and ASICs are some of the shared memory options available to train a deep net.
+
+Graphical processing unit (GPU) consists of thousands of core in the same unit where each core are process instructions in 
+parallel. Hence they are suitable for deep learning application. They consume more power.
+
+Field programmable gate arrays (FPGA) and Application-specific Integrated specific (ASIC) are best options for customized 
+deep net since they can be programmed at a hardware level and they are power efficient.
+
+Data parallelism, model parallelism, and pipeline parallelism are some of the options for distributed computing for deep learning.
+
+*********************
+Parallel Programming
+*********************
+
+Deep net performance can be improved at software level through parallel programming. 
+Below are some of the ways we can implement parallel programming:
+
+By decomposing the model into chunks and each chunk is fed in parallel to perform an independent task.
+Identify tasks that have dependencies and group them. By creating multiple groups with no dependencies, 
+each group of tasks can be processed in parallel.By implementing tasks or task groups as threads and run them in parallel.
+
+
+***************
+CPU vs GPU
+***************
+
+CPU executes instruction sequentially though instruction is independent of each other. Hence,
+it takes more time to process information for complex algorithms. It has a limited number of cores.
+
+GPU, in contrast, has thousands of cores that identify independent instructions, groups them and execute in parallel. 
+Hence they are more suitable for deep learning kind of applications.
+
+
+
