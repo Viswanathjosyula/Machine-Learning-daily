@@ -1,0 +1,53 @@
+**************************
+Image Classification
+**************************
+
+Image classification is one of the common applications of deep learning.
+
+A convolutional neural network can be used to recognize images and automatically label them.
+
+************************************
+Fact Extraction and Text Translation
+************************************
+
+Deep nets can be used to extract facts and relations in the text.
+
+Named entity recognition (NER), part of speech (POS) tagging or sentiment analysis are some of the problems
+where neural network models have outperformed traditional approaches.
+
+Texts can be translated from one language to other using RNN. The encoder-decoder recurrent neural network architecture
+is the core technology inside Google’s translate service
+
+*********************
+Sentiment Analysis
+*********************
+
+Using sentiment analysis, the underlying intent of the text can be extracted.
+
+With social media channels, it is possible to automate and measure what public feels on a given news story, topic, brand or product.
+
+Positive sentiment can be identified thereby allowing the identification of product advocates, 
+or to see which parts of a business strategy are working.
+
+**********************
+Medical Applications
+**********************
+
+Deep nets can be trained to detect cancerous cells and tumors from scanned images.
+
+They are applied in drug discovery by training nets with molecular structure and chemical compositions.
+
+Using MRI and CT scans neural networks can be trained to differentiate between benign and malignant tumors.
+
+*********************
+Other Applications
+*********************
+
+Deep nets are used in stock predictions and building portfolios and risk allocation.
+
+In digital advertising to optimally bid an ad space in a web page.
+
+In fraud detection to detect suspicious transaction.
+
+Using images from satellites and sensor data deep nets can be trained to detect problematic environmental conditions in agriculture.
+
