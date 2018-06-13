@@ -1,0 +1,152 @@
+What is TensorFlow?
+
+TensorFlow
+
+It is a Machine Learning library from Google Brain.
+It can be used to design, build, validate and implement Machine Learning and Deep Learning Models.
+It can also be used as a tool for performing high-end numerical computations.
+
+A tensor is a multidimensional array of numbers.
+
+A computation graph is an important representation of data flow while performing calculations using TensorFlow.
+This graph organizes the computations and calculates them sequentially.
+
+Running a TensorFlow session involves the following steps:
+
+Importing the desired library
+Initializing the variables and constants
+Placeholders for performing the computation
+Initializing a Session on CPU or GPU
+Performing the computation
+Display results
+Close Session
+
+*******************************
+Simple Program
+
+# Import tensorflow library  
+import tensorflow as tf
+
+# Initialize two constants
+a1 = tf.constant([4,3,2,1])
+a2 = tf.constant([1,3,4,7])
+
+# Perform Multiplication
+res = tf.multiply(a1, a2)
+
+# Intialize the Session
+sess = tf.Session()
+
+# Print the result
+print(sess.run(res))
+
+# Close the session
+sess.close()
+
+The above code is a simple multiplication computation performed with TensorFlow. This code follows the steps mentioned
+in the previous card.
+***********************************
+Handling Session Efficiently
+
+# Import `tensorflow`
+import tensorflow as tf
+
+# Initialize two constants
+a1 = tf.constant([4,3,2,1])
+a2 = tf.constant([3,1,3,4])
+
+# Perform Multiplication
+res = tf.multiply(a1, a2)
+
+# Initialize Session and run `result`
+with tf.Session() as sess:
+  finalOutput = sess.run(res)
+  print(finalOutput)
+Sessions can be handled more efficiently. The above code explains the steps.
+
+Invoke the session only for the required computation.
+
+***************************************
+
+Constants
+
+Constants are created using the constant() function.
+
+constant(value, dtype=None, shape=None, name='Const', verify_shape=False)
+
+value - Can take any assigned value
+dtype - Data Type (float / integer)
+shape - this is optional , it takes the dimensions
+name - can assign any name to the constant
+verify_shape - another optional parameter that verifies the dimension of the constant.
+ 
+
+Example:
+
+x = tf.constant(42, name="a", dtype=tf.float32)
+
+
+Variables
+
+In TensorFlow all the variables are in-memory buffers that have tensors. These tensors require initialization to be consumed in the data flow graph.
+Variables become a part of the graph by calling the variable() construct.
+They are used to keep and update the parameters used in the models.
+Variables can be defined as shown below.
+a = tf.Variable(tf.zeros([5]), name="a")
+
+Another way of using variable is
+
+z = tf.Variable(tf.add(x, y), trainable=False)
+
+
+Placeholders
+
+Placeholders are values that are initially unassigned but get initialized when the session is invoked.
+
+The main use of placeholders is they allow the creation of operations and the computational graph sans needing to provide the data before that.
+
+The required data can be added during the actual runtime from any external sources.
+
+Syntax:
+
+placeholder(dtype, shape=None, name=None)
+
+
+
+================================================================================
+
+
+Language and Version
+
+You need to have a good working knowledge of Python to be able to code in TensorFlow.
+TensorFlow is currently in ver 1.9.
+
+***************
+Scalar
+***************
+
+A Scalar is an element of a field that has magnitude but no direction.
+
+In simple terms, Scalar is just a number. Examples of Scalars: Weight, Height
+
+In tensor parlance, a scalar is a rank 0 tensor.
+
+**************
+Vector
+**************
+
+A vector is an entity in space with magnitude and direction.
+
+A vector can be represented as a list of numbers.
+In tensor parlance, a vector is a rank 1 tensor.
+
+**********
+Matrix
+**********
+
+A Matrix is known as a 2-dimensional array of numbers arranged in rows and columns.
+
+A matrix is a rank 2 tensor.
+
+
+
