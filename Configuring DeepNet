@@ -1,0 +1,61 @@
+Configuration Parameters
+
+When building a deep net, you need to decide on various parameters for its better performance. These are called hyperparameters.
+
+Unlike weights and biases hyperparameters are not learned by itself, you need to choose these parameters when building a deep net.
+
+*********************************
+Hyperparameter - Architecture
+*********************************
+
+Input layer: This layer is nothing but our input data, more the data better the learning of deep net.
+
+Hidden layers: There are many different hidden layers to choose from like convolution, pooling, activation, loss layer, etc.
+
+Output layer: At this layer, you need to decide on cost functions base on which our model gets trained. 
+Some of the cost functions are the sum of squares, exponential cost, cross-entropy, etc.
+
+*******************************
+Choosing the Number of Neurons
+*******************************
+
+You need to decide on the number of neurons in each layer. There are two ways to choose an optimized number of neurons: 
+growing and pruning.
+
+Growing: In this approach, you start with a small number of neurons and keep on adding them until 
+there is no improvement in the cost function.
+
+Pruning: It is exactly opposite of what you follow in growing. 
+You start with excess neurons and remove them step by step until there is a cost difference.
+
+************************
+Activation Functions
+***********************
+
+A Neural Network without Activation function would simply be a Linear regression model, 
+which has limited power and does not perform right most of the times. 
+
+Most popular types of activation functions are
+
+Sigmoid
+Tanh
+ReLu.
+
+***********************
+Regularization
+***********************
+
+Apply regularization to avoid overfitting of model (a case where your model does not perform well on test data).
+
+Regularization, significantly decreases the variance of the model, without a substantial increase in its bias.
+
+Ridge and Lasso regularization are the most commonly used regularization techniques.
+
+******************
+Learning Rate
+******************
+
+During the time of backpropagation, the learning rate must not be too small.
+
+This is because since it takes more time for the algorithm to learn and it should not be too large, 
+which may skip the global minimum of the cost function.
